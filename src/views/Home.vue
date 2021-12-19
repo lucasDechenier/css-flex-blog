@@ -1,13 +1,16 @@
 <template>
-  <v-app>
-    <router-view></router-view>
-  </v-app>
+  <div>
+    Router adicionado
+  </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-    //
   }),
 };
 </script>
+
+<style>
+
+</style>
