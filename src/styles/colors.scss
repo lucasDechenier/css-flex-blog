@@ -1,0 +1,14 @@
+$info: "info" #122ab2;
+$white: "white" #FFF;
+
+$colors: $info $white;
+
+@each $c in $colors{
+  .bg-#{nth($c, 1)} {
+    background-color: #{nth($c, 2)} !important;
+  }
+
+  .color-#{nth($c, 1)} {
+    color: #{nth($c, 2)} !important;
+  }
+}

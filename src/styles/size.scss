@@ -1,0 +1,5 @@
+@for $i from 0 through 1000 {
+  .max-w-#{$i}{
+    max-width: #{$i}px;
+  }
+}

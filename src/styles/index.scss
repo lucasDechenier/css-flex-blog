@@ -1,1 +1,33 @@
 @import "./text.scss";
+@import "./colors.scss";
+@import "./size.scss";
+@import "./layout.scss";
+
+//reset css
+
+h2, a{
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Utils
+
+.margin-auto{
+  margin: auto;
+}
+
+.flex-grow{
+  flex: 1;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
