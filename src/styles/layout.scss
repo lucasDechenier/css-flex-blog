@@ -16,3 +16,13 @@
 .flex-column {
   flex-direction: column;
 }
+
+@for $i from 1 through 5{
+  .flex-#{$i}{
+    flex: #{$i};
+  }
+}
+
+.mb-4{
+  margin-bottom: 16px !important;
+}
