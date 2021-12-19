@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import './styles/index.scss'
 import vuetify from './plugins/vuetify'
 import router from './router.js'
 
