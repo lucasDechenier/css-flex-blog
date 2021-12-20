@@ -41,69 +41,84 @@
           condições inegavelmente apropriadas objetivos.</div>
       </div>
       <div class="flex-img ma-3">
-        <v-img :src="require('../assets/sobre1.jpg')" position='left left' max-height="550" contain></v-img>
+        <v-img :src="require('../assets/sobre1.jpg')" position='left left' max-height="550" max-width="220" contain></v-img>
       </div>
       <div class="flex-img ma-3">
-        <v-img :src="require('../assets/sobre2.jpg')" position='left left' max-height="550" max-width="300" contain></v-img>
+        <v-img :src="require('../assets/sobre2.jpg')" position='left left' max-height="275" max-width="220" contain></v-img>
       </div>
     </section>
 
-    <section id="produtos">
-      <h1>Produtos</h1>
-      <div>
-        <div>
-          <h2>Purple</h2>
-          <v-img :src="require('../assets/produtos1.jpg')" max-height="550" max-width="100%" contain></v-img>
+    <section id="produtos" class="max-w-960 my-15 margin-auto">
+      <h1 class="title_2--bold mb-15 mx-3">Produtos</h1>
+      <div class="d-flex flex-wrap align-end">
+        <div class="ma-3">
+          <h2 class="title_2--bold color-gray-prod bg-gray-back px-5 py-15 b-purple">Purple</h2>
+          <v-img :src="require('../assets/produtos1.jpg')" position='left left' max-height="250" max-width="290" contain></v-img>
         </div>
-        <div>
-          <h2>Pink</h2>
-          <v-img :src="require('../assets/produtos2.jpg')" max-height="550" max-width="100%" contain></v-img>
+        <div class="ma-3">
+          <h2 class="title_2--bold color-gray-prod bg-gray-back px-5 py-15 b-pink">Pink</h2>
+          <v-img :src="require('../assets/produtos2.jpg')" position='left left' max-height="350" max-width="290" contain></v-img>
         </div>
-         <div>
-          <h2>Blue</h2>
-          <v-img :src="require('../assets/produtos3.jpg')" max-height="550" max-width="100%" contain></v-img>
+        <div class="ma-3">
+          <h2 class="title_2--bold color-gray-prod bg-gray-back px-5 py-15 b-blue">Blue</h2>
+          <v-img :src="require('../assets/produtos3.jpg')" position='left left' max-height="300" max-width="290" contain></v-img>
         </div>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Cobre</h2>
-        <span><sup>R$</sup>19</span>
-        <div>
-          <span>Planos ilimitados</span>
-          <span>Acesso restrito</span>
-          <span>Cateúdo secreto</span>
-          <span>Suporte 24h</span>
+    <section class="bg-gray-back preco d-flex flex-wrap align-end" id="preco">
+      <div class="flex-grow border pa-5 ma-3 preco-item">
+        <h2 class="title_2--bold color-gray-prod text-center mt-5">Cobre</h2>
+        <span 
+          class="max-w-300 margin-auto display-block my-5 text-center title_2--bold pt-3 pb-1 border-preco">
+          <sup class="large--bold mb-10">R$</sup>19
+        </span>
+        <div class="max-w-300 my-5 margin-auto subtitle d-flex flex-column gap-1">
+          <span class="item">Planos ilimitados</span>
+          <span class="item">Acesso restrito</span>
+          <span class="item">Cateúdo secreto</span>
+          <span class="item">Suporte 24h</span>
         </div>
-        <a href="#">Comprar</a>
+        <a href="#" class="title_1--bold uppercase text-center py-4 max-w-300 display-block margin-auto my-5 color-black border-send">
+          Comprar
+        </a>
       </div>
 
-      <div id="preco">
-        <h2>Prata</h2>
-        <span><sup>R$</sup>39</span>
-        <div>
-          <span>Planos ilimitados</span>
-          <span>Acesso restrito</span>
-          <span>Cateúdo secreto</span>
-          <span>Suporte 24h</span>
-          <span>Compra exclusiva</span>
+      <div class="flex-grow border pa-5 ma-3 preco-item">
+        <h2 class="title_2--bold color-gray-prod text-center mt-5">Prata</h2>
+        <span 
+          class="max-w-300 margin-auto display-block my-5 text-center title_2--bold pt-3 pb-1 border-preco">
+          <sup class="large--bold mb-10">R$</sup>39
+        </span>
+        <div class="max-w-300 my-5 margin-auto subtitle d-flex flex-column gap-1">
+          <span class="item">Planos ilimitados</span>
+          <span class="item">Acesso restrito</span>
+          <span class="item">Cateúdo secreto</span>
+          <span class="item">Suporte 24h</span>
+          <span class="item">Compra exclusiva</span>
         </div>
-        <a href="#">Comprar</a>
+        <a href="#" class="title_1--bold uppercase text-center py-4 max-w-300 display-block margin-auto my-5 color-black border-send">
+          Comprar
+        </a>
       </div>
 
-      <div>
-        <h2>Ouro</h2>
-        <span><sup>R$</sup>79</span>
-        <div>
-          <span>Planos ilimitados</span>
-          <span>Acesso restrito</span>
-          <span>Cateúdo secreto</span>
-          <span>Suporte 24h</span>
-          <span>Suporte 24h</span>
-          <span>Download dos itens</span>
+      <div class="flex-grow border pa-5 ma-3 preco-item">
+        <h2 class="title_2--bold color-gray-prod text-center mt-5">Ouro</h2>
+        <span 
+          class="max-w-300 margin-auto display-block my-5 text-center title_2--bold pt-3 pb-1 border-preco">
+          <sup class="large--bold mb-10">R$</sup>79
+        </span>
+        <div class="max-w-300 my-5 margin-auto subtitle d-flex flex-column gap-1">
+          <span class="item">Planos ilimitados</span>
+          <span class="item">Acesso restrito</span>
+          <span class="item">Cateúdo secreto</span>
+          <span class="item">Suporte 24h</span>
+          <span class="item">Suporte 24h</span>
+          <span class="item">Download dos itens</span>
         </div>
-        <a href="#">Comprar</a>
+        <a href="#" class="title_1--bold uppercase text-center py-4 max-w-300 display-block margin-auto my-5 color-black border-send">
+          Comprar
+        </a>
       </div>
     </section>
 
@@ -181,6 +196,64 @@ export default {
 
 .flex-img{
   flex: 1 1 160px;
+}
+
+.b-purple{
+  border-top: 8px solid #ae81ff;
+}
+
+.b-pink{
+  border-top: 8px solid #f9265e;
+}
+
+.b-blue{
+  border-top: 8px solid #66d9eb;
+}
+
+.border{
+  border: 4px solid white;
+}
+
+.border-preco{
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.item::after{
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #2c70ff;
+  border-radius: 50%
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-send{
+  border: 4px solid;
+}
+
+.preco{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@media (max-width: 800px) {
+  .preco{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .preco .preco-item:nth-child(3){
+    order: -2;
+  }
+  .preco .preco-item:nth-child(2){
+    order: -1;
+  }
 }
 
 </style>

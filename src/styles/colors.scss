@@ -2,8 +2,11 @@ $info: "info" #122ab2;
 $white: "white" #FFF;
 $menu: "menu" #2c70ff;
 $gray-text: "gray-text" #7c7c7c;
+$gray-prod: "gray-prod" #a4a4a4;
+$gray-back: "gray-back" #f7f7f7;
+$black: "black" #3c3c3c;
 
-$colors: $info $white $menu $gray-text; 
+$colors: $info $white $menu $gray-text $gray-prod $gray-back $black; 
 
 @each $c in $colors{
   .bg-#{nth($c, 1)} {

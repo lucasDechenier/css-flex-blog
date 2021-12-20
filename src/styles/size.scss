@@ -3,3 +3,10 @@
     max-width: #{$i}px;
   }
 }
+
+@for $i from 0 through 10 {
+  .gap-#{$i}{
+    gap: #{$i}rem;
+  }
+}
+

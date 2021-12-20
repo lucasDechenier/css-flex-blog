@@ -3,12 +3,14 @@ $font_family: Nunito;
 
 $title_1: ("title_1", 36px, 40px);
 $title_2: ("title_2", 48px, 52px);
+$large: ("large", 26px, 34px);
 $subtitle: ("subtitle", 20px, 28px);
+$normal: ("normal", 16px, 26px);
 $base: ("base", 14px, 24px);
 $small: ("small", 12px, 16px);
 
 
-$fonts: $title_1, $subtitle, $base, $small, $title_2;
+$fonts: $title_1, $subtitle, $base, $small, $title_2, $normal, $large;
 @each $name, $font-size, $line-height in $fonts {
   .#{$name} {
     font-family: $font_family !important;
