@@ -40,28 +40,28 @@
           afeta positivamente a correta previsão das 
           condições inegavelmente apropriadas objetivos.</div>
       </div>
-      <div class="flex-img ma-3">
-        <v-img :src="require('../assets/sobre1.jpg')" position='left left' max-height="550" max-width="220" contain></v-img>
+      <div class="flex-img d-flex align-center justify-center ma-3">
+        <v-img :src="require('../assets/sobre1.jpg')" position='center' max-width="100%" contain></v-img>
       </div>
-      <div class="flex-img ma-3">
-        <v-img :src="require('../assets/sobre2.jpg')" position='left left' max-height="275" max-width="220" contain></v-img>
+      <div class="flex-img d-flex justify-center ma-3">
+        <v-img :src="require('../assets/sobre2.jpg')" position='bottom' max-width="100%" contain></v-img>
       </div>
     </section>
 
     <section id="produtos" class="max-w-960 my-15 margin-auto">
       <h1 class="title_2--bold mb-15 mx-3">Produtos</h1>
-      <div class="d-flex flex-wrap align-end">
+      <div class="d-flex flex-wrap align-end" :class="smAndDown ? 'justify-center' : ''">
         <div class="ma-3">
           <h2 class="title_2--bold color-gray-prod bg-gray-back px-5 py-15 b-purple">Purple</h2>
-          <v-img :src="require('../assets/produtos1.jpg')" position='left left' max-height="250" max-width="290" contain></v-img>
+          <v-img :src="require('../assets/produtos1.jpg')" max-width="290"></v-img>
         </div>
         <div class="ma-3">
           <h2 class="title_2--bold color-gray-prod bg-gray-back px-5 py-15 b-pink">Pink</h2>
-          <v-img :src="require('../assets/produtos2.jpg')" position='left left' max-height="350" max-width="290" contain></v-img>
+          <v-img :src="require('../assets/produtos2.jpg')" max-width="290"></v-img>
         </div>
         <div class="ma-3">
           <h2 class="title_2--bold color-gray-prod bg-gray-back px-5 py-15 b-blue">Blue</h2>
-          <v-img :src="require('../assets/produtos3.jpg')" position='left left' max-height="300" max-width="290" contain></v-img>
+          <v-img :src="require('../assets/produtos3.jpg')" max-width="290"></v-img>
         </div>
       </div>
     </section>
@@ -181,6 +181,11 @@
 export default {
   data: () => ({
   }),
+  computed: {
+    smAndDown() {
+      return this.$vuetify.breakpoint.smAndDown
+    },
+  }
 };
 </script>
 
