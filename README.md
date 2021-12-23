@@ -11,7 +11,7 @@
   <a href="#-Executando">Executando</a> 
 </p>
 
-## ✅ Apresentação:
+## ✨ Apresentação:
 <br/>
 <p align="center">
   <img src="./src/assets/apresentation.gif"/>
