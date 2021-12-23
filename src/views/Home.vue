@@ -122,57 +122,57 @@
       </div>
     </section>
 
-    <section id="qualidade">
-      <div>
-        <h2>Inteligente</h2>
-        <span>O que temos que ter sempre em mente é que a 
+    <section id="qualidade" class="max-w-960 margin-auto my-15 d-flex flex-wrap">
+      <div class="qualidade-item">
+        <h2 class="title_1--bold color-gray-prod mb-5">Inteligente</h2>
+        <span class="subtitle color-gray-text">O que temos que ter sempre em mente é que a 
         determinação clara de objetivos afeta positivamente a correta previsão</span>
       </div>
 
-      <div>
-        <h2>Compacto</h2>
-        <span>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta 
+      <div class="qualidade-item">
+        <h2 class="title_1 color-gray-prod mb-5">Compacto</h2>
+        <span class="subtitle color-gray-text">O que temos que ter sempre em mente é que a determinação clara de objetivos afeta 
           positivamente a correta previsão das condições inegavelmente</span>
       </div>
 
-      <div>
-        <h2>Econômico</h2>
-        <span>O que temos que ter sempre em mente é que a determinação clara de objetivos 
+      <div class="qualidade-item">
+        <h2 class="title_1--bold color-gray-prod mb-5">Econômico</h2>
+        <span class="subtitle color-gray-text">O que temos que ter sempre em mente é que a determinação clara de objetivos 
           afeta positivamente a correta previsão</span>
       </div>
 
-      <div>
-        <h2>Transparente</h2>
-        <span>O que temos que ter sempre em mente é que a determinação clara de 
+      <div class="qualidade-item">
+        <h2 class="title_1--bold color-gray-prod mb-5">Transparente</h2>
+        <span class="subtitle color-gray-text">O que temos que ter sempre em mente é que a determinação clara de 
           objetivos afeta positivamente a correta previsão</span>
       </div>
 
-      <div>
-        <h2>Opaco</h2>
-        <span>O que temos que ter sempre em mente é que a determinação clara de objetivos 
+      <div class="qualidade-item">
+        <h2 class="title_1--bold color-gray-prod mb-5">Opaco</h2>
+        <span class="subtitle color-gray-text">O que temos que ter sempre em mente é que a determinação clara de objetivos 
           afeta positivamente a correta previsão das condições inegavelmente</span>
       </div>
 
-      <div>
-        <h2>Sustentável</h2>
-        <span>O que temos que ter sempre em mente é que a determinação clara de objetivos 
+      <div class="qualidade-item">
+        <h2 class="title_1--bold color-gray-prod mb-5">Sustentável</h2>
+        <span class="subtitle color-gray-text">O que temos que ter sempre em mente é que a determinação clara de objetivos 
           afeta positivamente a correta previsão</span>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h1>Newsletter</h1>
-        <span>Assine e fique por dentro das novidades</span>
+    <section class="newsletter d-flex flex-wrap">
+      <div class="newsletter-info">
+        <h1 class="title_2--bold color-gray-prod mb-2">Newsletter</h1>
+        <h2 class="subtitle color-gray-text mb-3">assine e fique por dentro das novidades</h2>
       </div>
-      <form>
-        <input type="text" placeholder="Seu e-mail">
-        <v-btn type="submit">Assinar</v-btn>
+      <form class="newsletter-form d-flex flex-wrap">
+        <input type="text" class="subtitle color-gray-text" placeholder="Seu e-mail">
+        <button type="submit" class="title_1--bold bg-menu color-white ma-0 pointer">ASSINAR</button>
       </form>
     </section>
 
-    <footer>
-      FlexBlog © Todos os direitos reservados.
+    <footer class="footer d-flex">
+      <span class="text-center flex-grow title_2 color-info ma-5">FlexBlog © Todos os direitos reservados.</span>
     </footer>
   </section>
 </template>
@@ -248,6 +248,74 @@ export default {
   padding-right: 60px;
 }
 
+.qualidade-item{
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.qualidade-item h2::before{
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n + 1) h2::before{
+  background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n + 2) h2::before{
+  background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n + 3) h2::before{
+  background: #66d9eb;
+}
+
+.newsletter{
+  background: #f7f7f7;
+  padding: 60px calc((100% - 960px)/2);
+}
+
+.newsletter-info{
+  flex: 1 1 240px;
+  margin: 0 10px;
+}
+.newsletter-info h2{
+  font-style: italic;
+  width: 240px;
+}
+
+.newsletter-form{
+  flex: 2 1 260px;
+  margin: 0 10px;
+  align-self: center;
+}
+
+.newsletter-form input{
+  flex: 3 1 260px;
+  border: 4px solid #2c70ff;
+  background: transparent;
+  padding: 15px 10px;
+  margin: 0px;
+  border-radius: 0px;
+  outline: none;
+}
+
+.newsletter-form button{
+  flex: 1 1 260px;
+  border: 0px;
+  padding: 15px 10px;
+}
+
+.footer{
+  display: flex;
+  min-height: 200px;
+  background: #2c70ff;
+  align-items: center;
+}
+
 @media (max-width: 800px) {
   .preco{
     padding-left: 10px !important;
@@ -258,6 +326,9 @@ export default {
   }
   .preco .preco-item:nth-child(2){
     order: -1;
+  }
+  .newsletter-form button{
+    font-size: 1.5em !important;
   }
 }
 

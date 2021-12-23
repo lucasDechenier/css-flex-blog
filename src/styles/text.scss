@@ -17,12 +17,6 @@ $fonts: $title_1, $subtitle, $base, $small, $title_2, $normal, $large;
     line-height: $line-height !important;
     font-size: $font-size !important;
     font-weight: 500 !important;
-    &--normal{
-      font-family: $font_family !important;
-      line-height: $line-height !important;
-      font-size: $font-size !important;
-      font-weight: normal !important;
-    }
     &--bold {
       font-family: $font_family !important;
       line-height: $line-height !important;
